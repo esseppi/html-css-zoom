@@ -183,6 +183,8 @@ main {
 
 .user {
     flex-basis: 248px;
+    max-height: 248px;
+
     flex-grow: 1;
     margin: 0.5rem 0.2rem;
     position: relative;
@@ -203,14 +205,32 @@ main {
 
 /* FOOTER */
 footer {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     display: flex;
     height: 5rem;
     width: 100%;
-    background-color: red;
+    background-color: #485056;
+}
+footer section {
+    display: flex;
 }
 
-footer div{
+
+footer section div{
     flex-direction: column;
+    margin-right: 1rem;
 }
+footer section div i{
+    font-size: 1.5rem;
+    padding: 0 25%;
+}
+
+footer section div:hover  footer section div i{
+    background-color: #ffffff;
+}
+
+footer section:last-child {
+    color: red;
+}
+
