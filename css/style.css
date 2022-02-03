@@ -211,26 +211,49 @@ footer {
     height: 5rem;
     width: 100%;
     background-color: #485056;
+    overflow: hidden;
 }
 footer section {
     display: flex;
 }
 
 
-footer section div{
-    flex-direction: column;
+footer section ul li{
+    display: inline-block;
+    list-style: none;
     margin-right: 1rem;
 }
-footer section div i{
+footer section ul li i{
     font-size: 1.5rem;
     padding: 0 25%;
-}
-
-footer section div:hover  footer section div i{
-    background-color: #ffffff;
 }
 
 footer section:last-child {
     color: red;
 }
 
+a,a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.2);
+}
+
+.ciao :hover{
+    background-color: #999999;
+}
+
+footer section:first-child {
+    min-width: 157px;
+}
+footer section:nth-child(2) {
+    min-width: 673px;
+}
+footer section:last-child {
+    min-width: 157px;
+}
