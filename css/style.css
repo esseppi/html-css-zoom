@@ -254,6 +254,3 @@ footer section:first-child {
 footer section:nth-child(2) {
     min-width: 673px;
 }
-footer section:last-child {
-    min-width: 157px;
-}
